@@ -1,0 +1,30 @@
+/*----------font import------------
+----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+
+
+/*----------font style------------
+----------------------------------*/
+
+$font_title: "Hind";
+$font_general: "Montserrat";
+
+/*----------color style------------
+----------------------------------*/
+
+$color_purple: #bd007b;
+$color_grey: #e2e2e2;
+$color_darkgrey:#5b5b5b;
+$color_bluegreen: #6abc9f;
+$color_yellow: #ffa414;
+$color_blue: #3089ae;
+$color_bluelight: #009bed;
+$color_red: #e5313a;
+
+/*----------color theme------------
+----------------------------------*/
+
+$bg_primary: $color_purple;
+$bg_grey: $color_grey;

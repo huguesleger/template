@@ -1,0 +1,280 @@
+/*-----------acces-direct-----------
+----------------------------------*/
+
+.access{
+background-image: url(../images/png/bg-pattern.png);
+}
+
+.title-access {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.slider{
+  width: auto;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  .parent-slide {
+    padding: 15px;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+
+}
+
+
+.slide .icon-round {
+  display: inline-block;
+  background: $color_darkgrey;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: #6ABC9F;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.95);
+    img{
+      transform: rotate(-5deg);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  img {
+    transition: all 0.3s ease-in-out;
+  }
+
+}
+
+  .slide .icon-inline {
+    padding-top: 18px;
+    display: inline-block;
+}
+
+/// icon paiement position center top
+.slide .paiement {
+  padding-top: 25px;
+}
+
+.txt-access {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-weight: 600;
+  font-family: $font_title;
+}
+
+/*-----------actus-----------------
+----------------------------------*/
+.actus {
+  padding-bottom: 50px;
+  display: table-cell;
+}
+
+
+.actu{
+display: inline;
+color: #fff;
+}
+
+.wrap-actu{
+  position: relative;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.thumb-title{
+  opacity: 1;
+  color: black;
+  z-index: 2000;
+  text-align: center;
+}
+
+.actu-title {
+  background: #000;
+  position: absolute;
+  top: -27px;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: $font_title;
+}
+
+.actu-content{
+    // height: 20vh;
+    padding: 10px;
+}
+
+@media (min-width: 768px){
+.hover-bg {
+  overflow: hidden;
+  display: inline-block;
+  background: $color_purple;
+}
+
+
+.img-actu {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: rotateZ(5deg)scale(1.2);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.7;
+    overflow: hidden;
+    z-index: 150;
+  }
+}
+
+}
+
+
+.more {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.icon-more {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+}
+/*-----------slick-mobile-----------------
+----------------------------------*/
+@media (max-width: 767px){
+.slick-next {
+    right: 0px;
+}
+.slick-prev {
+    left: 0px;
+}
+}
+
+/*-----------sortir-----------------
+----------------------------------*/
+
+.sortir {
+  background: $color_purple;
+  margin-top: 30px;
+    .wrap-title {
+      padding-top: 0;
+      margin-top: -5px;
+    }
+}
+
+.list-date {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: $font_title;
+  display: inline-block;
+  position: absolute;
+  margin-top: 45px;
+}
+
+@media (max-width: 767px){
+  .list-date {
+  position: relative;
+  }
+}
+
+@media (min-width: 768px){
+  .list-date {
+    right: 15px;
+  }
+}
+
+@media (min-width: 1024px){
+  .list-date {
+    right: 55px;
+  }
+}
+
+@media (min-width: 1200px){
+  .list-date {
+    float: right;
+    position: relative;
+    right: 0;
+  }
+}
+
+.btn-date {
+  background: $color_darkgrey;
+}
+
+.sortir-content {
+  padding-top: 20px;
+}
+
+.actu-title-sortir {
+background: #fff;
+position: absolute;
+top: -75px;
+left: 20px;
+padding: 5px 50px 5px 10px;
+margin-bottom: 0;
+font-size: 12px;
+font-weight: 100;
+font-family: "Hind";
+}
+
+.note {
+  background: #fff;
+  position: absolute;
+  font-family: $font_title;
+  padding-left: 5px;
+  padding-right: 5px;
+  top:-50px;
+  left: 20px;
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
+.actu-content-sortir {
+  padding: 5px 20px;
+}
+
+.bold-note {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.infos-content {
+  padding: 2px 20px;
+  font-weight: 900;
+}
+
+.time {
+  margin: 0;
+}
+
+.title-content-sortir {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.icon-more-center {
+display: flex;
+justify-content: center;
+
+}
+
+.icon-more-sortir {
+  background: $color_purple;
+  padding: 5px 20px 0;
+  color: #fff;
+  transition: padding 0.2s ease-in-out;
+  &:hover {
+      color: #fff;
+      padding: 5px 60px 0;
+      transition: padding 0.2s ease-in-out;
+  }
+}

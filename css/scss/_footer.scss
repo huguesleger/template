@@ -1,0 +1,57 @@
+.footer {
+  background-image: url(../images/png/bg-pattern.png);
+}
+
+.footer-content {
+  padding-top: 30px;
+}
+
+.btn-abo {
+padding: 10px 90px 10px 10px;
+text-transform: uppercase;
+}
+
+.info-abo {
+  padding-top: 30px;
+}
+
+.btn-inscr {
+  background-color: #666666;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.adresse {
+  padding-bottom: 30px;
+}
+
+.inscription {
+  padding-top: 20px;
+}
+
+.credit {
+  font-size: 12px;
+  ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  li {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.logo-inexine {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}

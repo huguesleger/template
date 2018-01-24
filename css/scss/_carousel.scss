@@ -1,0 +1,169 @@
+.carousel-control {
+  opacity: 1;
+}
+
+
+.carousel-control.left,.carousel-control.right  {
+    background-image: none;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    padding-top: 4px;
+}
+
+
+
+
+.carousel-caption {
+  right: 0;
+  left: 0;
+  text-align: left;
+  padding-bottom: 30px;
+  text-shadow: none;
+  font-family: $font_title;
+
+}
+
+
+.caption-title {
+  background: $color_yellow;
+  padding: 8px 20px 8px 15px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-left: -15px;
+}
+
+.caption-content {
+  padding-top: 8px;
+  display: table-cell;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+
+}
+
+
+
+.icon-caption {
+  background-image: url(../images/png/forme-bluegreen.png);
+  background-repeat: no-repeat no-repeat;
+  background-size: 60%;
+  width: 80px;
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  -webkit-animation: pulse 2000ms infinite;
+  animation: pulse 2000ms infinite;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    color: #000;
+    transition: 0.2s ease-in-out;
+  }
+  i {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    font-size: 18px;
+  }
+
+}
+
+
+@media (max-width: 767px){
+.carousel-header {
+  // position: absolute;
+  width: 100%;
+}
+
+.carousel-control {
+  display: none;
+}
+
+.caption-title {
+font-size: 10px;
+}
+
+.caption-content {
+  font-size: 14px;
+}
+
+.icon-caption {
+background-size: 50%;
+right: -50px;
+top: -30px;
+i {
+  top: 15px;
+  left: 15px;
+  font-size: 14px;
+}
+}
+
+}/*-----------end max-width 767px----------*/
+
+@media (max-width: 768px){
+
+
+
+.carousel-inner > .item {
+    overflow: hidden;
+}
+
+}/*-----------end max-width 768px----------*/
+
+@media (max-width: 1024px){
+.carousel-caption {
+  top: 50%;
+}
+.thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+ display: block;
+ max-width: initial;
+ margin-left: -40vh /*-----------centrage image----------*/;
+ height: 45vh;
+}
+
+}/*-----------end max-width 1024px----------*/
+
+
+@media (min-width: 768px){
+.carousel-control {
+  width: 4%;
+  display: block;
+}
+
+.carousel-control.left {
+  left: 0;
+}
+
+.carousel-control.right {
+  right: 0;
+}
+
+}/*-----------end min-width 768px----------*/
+
+@media (min-width: 1200px){
+.carousel-control {
+  width: 2%;
+}
+
+.carousel-control.left {
+  left: 18.5%;
+}
+
+.carousel-control.right {
+  right:18.5%;
+}
+
+.carousel-caption {
+  top: 60%;
+}
+
+
+}/*-----------end min-width 1200px----------*/

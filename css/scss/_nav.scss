@@ -1,0 +1,271 @@
+/*-----------sortir-----------------
+----------------------------------*/
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.fixed-main {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+}
+
+@media (max-width: 767px){
+  .navbar-default {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px){
+  .navbar-default {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nav > li > a {
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+.nav > li > a {
+  padding: 10px 15px;
+  font-size: 10px;
+}
+}
+
+
+.navbar-nav > li > a {
+    border-right: 1px solid #000;
+    margin-top: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
+
+
+
+
+
+
+///icon open dropdown nav
+.navbar-default .navbar-nav>li>a::after {
+    font-family: "FontAwesome";
+    content: "\f107";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+
+.dropdown-menu {
+  border:0;
+  box-shadow: none;
+  right:0;
+  left:inherit;
+}
+
+.dropdown-btn>a::after {
+    top: auto !important;
+    font-family: "FontAwesome";
+    content: "\f107";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 5px;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 0;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.drop-btn {
+  border-right: 0 !important;
+}
+
+
+
+/* MEGA MENU STYLE
+********************************/
+
+.nav-mega {
+  width: 100%;
+  .dropdown {
+    position: static;
+  }
+}
+
+
+
+.mega-menu {
+	padding: 10px 0px !important;
+  border-radius: 0;
+  margin-top: 0px;
+  height: 50vh;
+  ul {
+    padding-left: 0;
+  }
+	}
+
+	.mega-menu li {
+    display: block;
+		padding: 3px 0px;
+		}
+
+		.mega-menu li.mega-menu-column {
+      display: inline-block;
+      margin-right: 35px;
+      margin-left: 35px;
+			}
+
+			.mega-menu .nav-header {
+			padding: 0 !important;
+			margin-bottom: 10px;
+			width: 100%;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 15px;
+			}
+      .mega-menu img {
+         padding-bottom: 10px;
+       }
+
+.dropdown-open-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.dropdown-menu {
+  background: #81CFE0;
+}
+
+.dropdown-menu-white {
+  background: #fff;
+}
+
+
+
+/* Disable Toggle style
+********************************/
+
+/* Dropdown Toggle on style */
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background: inherit; /* Set to inherit when using mouse hover to open dropdown */
+    color: inherit;
+    }
+    /* Toggle off style */
+    .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+    .navbar .nav > li.dropdown > a:focus {
+    background: inherit;
+    color: inherit;
+    }
+    /* Toggle hover */
+    .navbar .nav li.dropdown > .dropdown-toggle:hover,
+    .navbar .nav li.dropdown.open > .dropdown-toggle:hover {
+    background-color: #81CFE0;
+    }
+
+
+    /* Toggle caret*/
+    .navbar .nav li.dropdown > .dropdown-toggle .caret {
+        border-bottom-color: transparent;
+        border-top-color: transparent;
+        }
+        /* Toggle caret hover */
+        .navbar .nav li.dropdown > a:hover .caret,
+        .navbar .nav li.dropdown > a:focus .caret {
+        border-bottom-color: #333;
+        border-top-color: #333;
+        }
+        /* Toggle caret active */
+        .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+        .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+        .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+        border-bottom-color:#333;
+        border-top-color: #333;
+      }dropdown-men
+
+
+
+/* Hover style
+********************************/
+.navbar .nav > li > a, .mega-menu a
+ {
+  -webkit-transition: all 200ms ease;
+	 -moz-transition: all 200ms ease;
+	  -ms-transition: all 200ms ease;
+	   -o-transition: all 200ms ease;
+	      transition: all 200ms ease;
+
+		 /* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/
+	     -webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+	     -webkit-transform: translateZ(0);
+}
+
+
+
+
+
+
+.nav > li > .btn-blue {
+  background-color: $color_blue;
+  color: #fff !important;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.nav > li > .btn-red-nav {
+  background-color: $color_red;
+  color: #fff !important;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.navbar-default .navbar-nav > li > .btn-blue:hover,
+.navbar-default .navbar-nav > li > .btn-blue:focus {
+  background-color: $color_blue;
+}
+
+.navbar-default .navbar-nav > li > .btn-red-nav:hover,
+.navbar-default .navbar-nav > li > .btn-red-nav:focus {
+  background-color: $color_red;
+}
+
+
+.navbar-toggle {
+float: left;
+margin-left: 15px;
+}
